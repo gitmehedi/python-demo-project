@@ -18,6 +18,6 @@ from django.contrib import admin
 from chore import urls as chore_urls
 
 urlpatterns = [
-    url(r'^chore/', include(chore_urls)),
+    url(r'^chores/', include(chore_urls)),
     url(r'^admin/', include(admin.site.urls)),
 ]
