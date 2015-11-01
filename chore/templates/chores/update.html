@@ -1,0 +1,14 @@
+{% if chorelist %}
+<h1>Chore Create</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="complete">Is Complete</label>
+
+    <input type="checkbox" name="complete" checked/>
+
+    <input type="submit" value="Submit"/>
+
+</form>
+
+
+{% endif %}

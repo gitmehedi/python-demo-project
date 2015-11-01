@@ -1,0 +1,33 @@
+{% if chorelist %}
+<h1>Chore Lists</h1>
+
+<table border="1">
+    <tr>
+        <td>{{chorelist.id}}</td>
+        <td>{{chorelist.name}}</td>
+        <td>
+            <a href="chore/{{chorelist.id}}">Edit</a>
+            <a href="chore/{{chorelist.id}}">Delete</a>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    {% for chore in chorelist.chore_set.all%}
+    <li>{{chore}}</li>
+    {% endfor%}
+</ul>
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="complete">Is Complete</label>
+
+    <input type="checkbox" name="complete" checked/>
+
+    <input type="submit" value="Submit"/>
+
+</form>
+
+
+{% endif %}
