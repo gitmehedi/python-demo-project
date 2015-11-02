@@ -1,9 +1,39 @@
-{% if chorelists %}
-    <ul>
-        {% for chorelist in chorelists %}
-            <li><a href="/chores/{{chorelist.id}}">{{chorelist.name}}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No crhorelists are currenctly avaiable.</p>
-{% endif %}
+{% extends 'base.html' %}
+
+{% block primary %}
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row " id="service">
+        <div class="col-md-4 text-center">
+            <a href="software.php"><img class="img-circle" src="images/bandwidth-summary.jpg"></a>
+            <h2>Bandwidth</h2>
+            <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+            <p><a class="btn btn-default" href="bandwidth.php">View details »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="software.php"><img class="img-circle" src="images/server_infrastructure.jpg"></a>
+            <h2>Infrastructure</h2>
+            <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+            <p><a class="btn btn-default" href="infrastructure.php">View details »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="software.php"><img class="img-circle" src="images/software.png"></a>
+            <h2>Software</h2>
+            <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
+            <p><a class="btn btn-default" href="software.php">View details »</a></p>
+        </div>
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <!--<hr class="featurette-divider">-->
+
+    <!--    <div class="featurette "id="contact">
+            <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+            <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+        </div>-->
+</div>
+{% endblock %}
