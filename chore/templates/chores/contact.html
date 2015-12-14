@@ -2,7 +2,8 @@
 
 {% block primary %}
     <div class="container">
-        <form class="form-horizontal" action="">
+        <form class="form-horizontal" action="" method="post">
+            {% csrf_token %}
             {% for field in form %}
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="{{ field.label }}">{{ field.label }}</label>
