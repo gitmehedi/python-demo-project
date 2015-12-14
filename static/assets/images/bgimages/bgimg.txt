@@ -1,0 +1,14 @@
+.
+..
+Thumbs.db
+bg1f.jpg
+bga.jpg
+bgb.png
+bgc.jpg
+bgd.png
+bge.jpg
+bgg.jpg
+bgh.jpg
+bgi.jpg
+bgimg.txt
+bgj.jpg

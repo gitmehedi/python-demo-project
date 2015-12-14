@@ -4,6 +4,10 @@ from . import views
 
 urlpatterns = [
      url(r'^$', views.index, name='index'),
-     url(r'^(?P<chorelist_id>[0-9]+)$', views.details, name='details'),
-     url(r'^(?P<chorelist_id>[0-9]+)/chores/(?P<chore_id>[0-9]+)/update/$', views.update, name='update'),
+     url(r'^home/$', views.home, name='home'),
+     url(r'^aboutus/$', views.aboutus, name='aboutus'),
+     url(r'^service/$', views.service, name='service'),
+     url(r'^bandwidth/$', views.bandwidth, name='bandwidth'),
+     url(r'^software/$', views.software, name='software'),
+     url(r'^contactus/$', views.contactus, name='contactus'),
 ]

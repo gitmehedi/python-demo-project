@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from chore import urls as chore_urls
-
+from chore import urls as chore_url
 urlpatterns = [
-    url(r'^chores/', include(chore_urls)),
+    url(r'', include(chore_url)),
     url(r'^admin/', include(admin.site.urls)),
 ]
